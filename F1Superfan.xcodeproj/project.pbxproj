@@ -72,6 +72,8 @@
 		1A1D0A092C2E4B5E00B1C385 /* tsunoda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tsunoda.png; sourceTree = "<group>"; };
 		1A1D0A0B2C2E540C00B1C385 /* TitleScreenSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenSettingsView.swift; sourceTree = "<group>"; };
 		1A1D0A0D2C2E546A00B1C385 /* TitleScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenView.swift; sourceTree = "<group>"; };
+		1A1D0A112C2E59A700B1C385 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1A1D0A122C2E5A4D00B1C385 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,8 @@
 		1A1D09BA2C2E287700B1C385 = {
 			isa = PBXGroup;
 			children = (
+				1A1D0A122C2E5A4D00B1C385 /* LICENSE.md */,
+				1A1D0A112C2E59A700B1C385 /* README.md */,
 				1A1D09C52C2E287700B1C385 /* F1Superfan */,
 				1A1D09C42C2E287700B1C385 /* Products */,
 			);
