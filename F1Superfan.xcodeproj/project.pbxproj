@@ -11,6 +11,32 @@
 		1A1D09C92C2E287700B1C385 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D09C82C2E287700B1C385 /* ContentView.swift */; };
 		1A1D09CB2C2E287800B1C385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09CA2C2E287800B1C385 /* Assets.xcassets */; };
 		1A1D09CE2C2E287800B1C385 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09CD2C2E287800B1C385 /* Preview Assets.xcassets */; };
+		1A1D09D82C2E2C5500B1C385 /* Formula1-Wide.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09D52C2E2C5500B1C385 /* Formula1-Wide.otf */; };
+		1A1D09D92C2E2C5500B1C385 /* Formula1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09D62C2E2C5500B1C385 /* Formula1-Regular.otf */; };
+		1A1D09DA2C2E2C5500B1C385 /* Formula1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09D72C2E2C5500B1C385 /* Formula1-Bold.otf */; };
+		1A1D09DC2C2E2FE200B1C385 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09DB2C2E2FE100B1C385 /* image.png */; };
+		1A1D09E42C2E46A600B1C385 /* leclerc.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09E32C2E46A600B1C385 /* leclerc.png */; };
+		1A1D09E62C2E46C100B1C385 /* hamilton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09E52C2E46C100B1C385 /* hamilton.png */; };
+		1A1D09E82C2E46CA00B1C385 /* russell.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09E72C2E46CA00B1C385 /* russell.png */; };
+		1A1D09EA2C2E473F00B1C385 /* sainz.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09E92C2E473F00B1C385 /* sainz.png */; };
+		1A1D09EC2C2E482100B1C385 /* verstappen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09EB2C2E482100B1C385 /* verstappen.png */; };
+		1A1D09EE2C2E486600B1C385 /* perez.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09ED2C2E486600B1C385 /* perez.png */; };
+		1A1D09F02C2E48B800B1C385 /* alonso.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09EF2C2E48B800B1C385 /* alonso.png */; };
+		1A1D09F22C2E48FB00B1C385 /* stroll.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09F12C2E48FB00B1C385 /* stroll.png */; };
+		1A1D09F42C2E492400B1C385 /* norris.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09F32C2E492400B1C385 /* norris.png */; };
+		1A1D09F62C2E494A00B1C385 /* piastri.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09F52C2E494A00B1C385 /* piastri.png */; };
+		1A1D09F82C2E497E00B1C385 /* gasly.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09F72C2E497E00B1C385 /* gasly.png */; };
+		1A1D09FA2C2E4A4C00B1C385 /* ocon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09F92C2E4A4C00B1C385 /* ocon.png */; };
+		1A1D09FC2C2E4A8E00B1C385 /* albon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09FB2C2E4A8E00B1C385 /* albon.png */; };
+		1A1D09FE2C2E4AAC00B1C385 /* sargeant.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09FD2C2E4AAC00B1C385 /* sargeant.png */; };
+		1A1D0A002C2E4AD200B1C385 /* bottas.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09FF2C2E4AD200B1C385 /* bottas.png */; };
+		1A1D0A022C2E4AE600B1C385 /* zhou.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0A012C2E4AE600B1C385 /* zhou.png */; };
+		1A1D0A042C2E4B0500B1C385 /* magnussen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0A032C2E4B0500B1C385 /* magnussen.png */; };
+		1A1D0A062C2E4B2600B1C385 /* hulkenberg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0A052C2E4B2600B1C385 /* hulkenberg.png */; };
+		1A1D0A082C2E4B3E00B1C385 /* ricciardo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0A072C2E4B3D00B1C385 /* ricciardo.png */; };
+		1A1D0A0A2C2E4B5E00B1C385 /* tsunoda.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0A092C2E4B5E00B1C385 /* tsunoda.png */; };
+		1A1D0A0C2C2E540C00B1C385 /* TitleScreenSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A0B2C2E540C00B1C385 /* TitleScreenSettingsView.swift */; };
+		1A1D0A0E2C2E546A00B1C385 /* TitleScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A0D2C2E546A00B1C385 /* TitleScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +45,33 @@
 		1A1D09C82C2E287700B1C385 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A1D09CA2C2E287800B1C385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A1D09CD2C2E287800B1C385 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A1D09D42C2E2B7000B1C385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1A1D09D52C2E2C5500B1C385 /* Formula1-Wide.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Wide.otf"; sourceTree = "<group>"; };
+		1A1D09D62C2E2C5500B1C385 /* Formula1-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Regular.otf"; sourceTree = "<group>"; };
+		1A1D09D72C2E2C5500B1C385 /* Formula1-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Bold.otf"; sourceTree = "<group>"; };
+		1A1D09DB2C2E2FE100B1C385 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		1A1D09E32C2E46A600B1C385 /* leclerc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leclerc.png; sourceTree = "<group>"; };
+		1A1D09E52C2E46C100B1C385 /* hamilton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamilton.png; sourceTree = "<group>"; };
+		1A1D09E72C2E46CA00B1C385 /* russell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = russell.png; sourceTree = "<group>"; };
+		1A1D09E92C2E473F00B1C385 /* sainz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sainz.png; sourceTree = "<group>"; };
+		1A1D09EB2C2E482100B1C385 /* verstappen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = verstappen.png; sourceTree = "<group>"; };
+		1A1D09ED2C2E486600B1C385 /* perez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perez.png; sourceTree = "<group>"; };
+		1A1D09EF2C2E48B800B1C385 /* alonso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alonso.png; sourceTree = "<group>"; };
+		1A1D09F12C2E48FB00B1C385 /* stroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stroll.png; sourceTree = "<group>"; };
+		1A1D09F32C2E492400B1C385 /* norris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = norris.png; sourceTree = "<group>"; };
+		1A1D09F52C2E494A00B1C385 /* piastri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piastri.png; sourceTree = "<group>"; };
+		1A1D09F72C2E497E00B1C385 /* gasly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gasly.png; sourceTree = "<group>"; };
+		1A1D09F92C2E4A4C00B1C385 /* ocon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ocon.png; sourceTree = "<group>"; };
+		1A1D09FB2C2E4A8E00B1C385 /* albon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albon.png; sourceTree = "<group>"; };
+		1A1D09FD2C2E4AAC00B1C385 /* sargeant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sargeant.png; sourceTree = "<group>"; };
+		1A1D09FF2C2E4AD200B1C385 /* bottas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottas.png; sourceTree = "<group>"; };
+		1A1D0A012C2E4AE600B1C385 /* zhou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhou.png; sourceTree = "<group>"; };
+		1A1D0A032C2E4B0500B1C385 /* magnussen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnussen.png; sourceTree = "<group>"; };
+		1A1D0A052C2E4B2600B1C385 /* hulkenberg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hulkenberg.png; sourceTree = "<group>"; };
+		1A1D0A072C2E4B3D00B1C385 /* ricciardo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ricciardo.png; sourceTree = "<group>"; };
+		1A1D0A092C2E4B5E00B1C385 /* tsunoda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tsunoda.png; sourceTree = "<group>"; };
+		1A1D0A0B2C2E540C00B1C385 /* TitleScreenSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenSettingsView.swift; sourceTree = "<group>"; };
+		1A1D0A0D2C2E546A00B1C385 /* TitleScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +104,13 @@
 		1A1D09C52C2E287700B1C385 /* F1Superfan */ = {
 			isa = PBXGroup;
 			children = (
+				1A1D0A102C2E55EC00B1C385 /* Images */,
+				1A1D0A0F2C2E55DD00B1C385 /* Fonts */,
+				1A1D09D42C2E2B7000B1C385 /* Info.plist */,
 				1A1D09C62C2E287700B1C385 /* F1SuperfanApp.swift */,
 				1A1D09C82C2E287700B1C385 /* ContentView.swift */,
+				1A1D0A0D2C2E546A00B1C385 /* TitleScreenView.swift */,
+				1A1D0A0B2C2E540C00B1C385 /* TitleScreenSettingsView.swift */,
 				1A1D09CA2C2E287800B1C385 /* Assets.xcassets */,
 				1A1D09CC2C2E287800B1C385 /* Preview Content */,
 			);
@@ -65,6 +123,44 @@
 				1A1D09CD2C2E287800B1C385 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A1D0A0F2C2E55DD00B1C385 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1A1D09D72C2E2C5500B1C385 /* Formula1-Bold.otf */,
+				1A1D09D62C2E2C5500B1C385 /* Formula1-Regular.otf */,
+				1A1D09D52C2E2C5500B1C385 /* Formula1-Wide.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1A1D0A102C2E55EC00B1C385 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1A1D09FF2C2E4AD200B1C385 /* bottas.png */,
+				1A1D09F12C2E48FB00B1C385 /* stroll.png */,
+				1A1D09F32C2E492400B1C385 /* norris.png */,
+				1A1D09F92C2E4A4C00B1C385 /* ocon.png */,
+				1A1D0A012C2E4AE600B1C385 /* zhou.png */,
+				1A1D09ED2C2E486600B1C385 /* perez.png */,
+				1A1D09F52C2E494A00B1C385 /* piastri.png */,
+				1A1D09E52C2E46C100B1C385 /* hamilton.png */,
+				1A1D09E92C2E473F00B1C385 /* sainz.png */,
+				1A1D0A052C2E4B2600B1C385 /* hulkenberg.png */,
+				1A1D09FD2C2E4AAC00B1C385 /* sargeant.png */,
+				1A1D09E72C2E46CA00B1C385 /* russell.png */,
+				1A1D09EF2C2E48B800B1C385 /* alonso.png */,
+				1A1D09EB2C2E482100B1C385 /* verstappen.png */,
+				1A1D09FB2C2E4A8E00B1C385 /* albon.png */,
+				1A1D09F72C2E497E00B1C385 /* gasly.png */,
+				1A1D09DB2C2E2FE100B1C385 /* image.png */,
+				1A1D09E32C2E46A600B1C385 /* leclerc.png */,
+				1A1D0A032C2E4B0500B1C385 /* magnussen.png */,
+				1A1D0A072C2E4B3D00B1C385 /* ricciardo.png */,
+				1A1D0A092C2E4B5E00B1C385 /* tsunoda.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +221,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1D0A062C2E4B2600B1C385 /* hulkenberg.png in Resources */,
+				1A1D0A042C2E4B0500B1C385 /* magnussen.png in Resources */,
+				1A1D09FE2C2E4AAC00B1C385 /* sargeant.png in Resources */,
 				1A1D09CE2C2E287800B1C385 /* Preview Assets.xcassets in Resources */,
+				1A1D09F42C2E492400B1C385 /* norris.png in Resources */,
+				1A1D0A022C2E4AE600B1C385 /* zhou.png in Resources */,
+				1A1D09FA2C2E4A4C00B1C385 /* ocon.png in Resources */,
+				1A1D09EA2C2E473F00B1C385 /* sainz.png in Resources */,
+				1A1D09EE2C2E486600B1C385 /* perez.png in Resources */,
+				1A1D0A082C2E4B3E00B1C385 /* ricciardo.png in Resources */,
+				1A1D0A0A2C2E4B5E00B1C385 /* tsunoda.png in Resources */,
+				1A1D09F82C2E497E00B1C385 /* gasly.png in Resources */,
+				1A1D09D92C2E2C5500B1C385 /* Formula1-Regular.otf in Resources */,
+				1A1D09DA2C2E2C5500B1C385 /* Formula1-Bold.otf in Resources */,
+				1A1D09E82C2E46CA00B1C385 /* russell.png in Resources */,
+				1A1D09E62C2E46C100B1C385 /* hamilton.png in Resources */,
+				1A1D0A002C2E4AD200B1C385 /* bottas.png in Resources */,
+				1A1D09F22C2E48FB00B1C385 /* stroll.png in Resources */,
+				1A1D09D82C2E2C5500B1C385 /* Formula1-Wide.otf in Resources */,
+				1A1D09F62C2E494A00B1C385 /* piastri.png in Resources */,
+				1A1D09F02C2E48B800B1C385 /* alonso.png in Resources */,
+				1A1D09FC2C2E4A8E00B1C385 /* albon.png in Resources */,
+				1A1D09EC2C2E482100B1C385 /* verstappen.png in Resources */,
 				1A1D09CB2C2E287800B1C385 /* Assets.xcassets in Resources */,
+				1A1D09DC2C2E2FE200B1C385 /* image.png in Resources */,
+				1A1D09E42C2E46A600B1C385 /* leclerc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +258,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1D09C92C2E287700B1C385 /* ContentView.swift in Sources */,
+				1A1D0A0E2C2E546A00B1C385 /* TitleScreenView.swift in Sources */,
+				1A1D0A0C2C2E540C00B1C385 /* TitleScreenSettingsView.swift in Sources */,
 				1A1D09C72C2E287700B1C385 /* F1SuperfanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +397,7 @@
 				DEVELOPMENT_TEAM = U2TZ26MU22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = F1Superfan/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +427,7 @@
 				DEVELOPMENT_TEAM = U2TZ26MU22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = F1Superfan/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

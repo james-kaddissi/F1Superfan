@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var usesTeamColors = true
+    @State private var favoriteDriver = "sainz"
+    @State private var showSettings = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        TitleScreenView(usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver, showSettings: $showSettings)
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
