@@ -13,7 +13,7 @@ struct TitleScreenView: View {
     @Binding var favoriteDriver: String
     @Binding var showSettings: Bool
     
-    private func teamColor() -> Color {
+    public func teamColor() -> Color {
         switch favoriteDriver {
         case "hamilton", "russell":
             return Color(red: 0, green: 0.63, blue: 0.60)
