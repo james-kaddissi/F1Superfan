@@ -15,37 +15,11 @@ struct TitleScreenView: View {
     
     @State private var showSettings = false
     
-    public func teamColor() -> Color {
-        switch favoriteDriver {
-        case "hamilton", "russell":
-            return Color(red: 0, green: 0.63, blue: 0.60)
-        case "leclerc", "sainz":
-            return Color(red: 0.65, green: 0.02, blue: 0.10)
-        case "verstappen", "perez":
-            return Color(red: 0.11, green: 0.12, blue: 0.27)
-        case "alonso", "stroll":
-            return Color(red: 0, green: 0.35, blue: 0.31)
-        case "norris", "piastri":
-            return Color(red: 1, green: 0.50, blue: 0)
-        case "gasly", "ocon":
-            return Color(red: 0, green: 0.47, blue: 0.76)
-        case "albon", "sargeant":
-            return Color(red: 0.02, green: 0.12, blue: 0.26)
-        case "bottas", "zhou":
-            return Color(red: 0, green: 0.91, blue: 0.20)
-        case "magnussen", "hulkenberg":
-            return Color(red: 0.97, green: 0.13, blue: 0.22)
-        case "ricciardo", "tsunoda":
-            return Color(red: 0.02, green: 0.12, blue: 0.24)
-        default:
-            return .red
-        }
-    }
     var body: some View {
         NavigationView {
             ZStack {
                 ContainerRelativeShape().fill(LinearGradient(
-                    gradient: Gradient(colors: [.white, usesTeamColors ? teamColor(): .red, usesTeamColors ? teamColor(): .red, usesTeamColors ? teamColor(): .red]),
+                    gradient: Gradient(colors: [.white, usesTeamColors ? teamColor(for: favoriteDriver): .red, usesTeamColors ? teamColor(for: favoriteDriver): .red, usesTeamColors ? teamColor(for: favoriteDriver): .red]),
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing
                 )).ignoresSafeArea()
@@ -54,7 +28,7 @@ struct TitleScreenView: View {
                     .aspectRatio(contentMode: .fit)
                     .overlay(
                         LinearGradient(
-                            gradient: Gradient(colors: [.clear, .clear, .clear,  usesTeamColors ? teamColor(): .red,  usesTeamColors ? teamColor(): .red]),
+                            gradient: Gradient(colors: [.clear, .clear, .clear,  usesTeamColors ? teamColor(for: favoriteDriver): .red,  usesTeamColors ? teamColor(for: favoriteDriver): .red]),
                             startPoint: .top,
                             endPoint: .bottom
                         )

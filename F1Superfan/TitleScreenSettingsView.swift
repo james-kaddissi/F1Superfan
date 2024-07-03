@@ -10,37 +10,12 @@ import SwiftUI
 struct TitleScreenSettingsView: View {
     @Binding var usesTeamColors: Bool
     @Binding var favoriteDriver: String
-    public func teamColor() -> Color {
-        switch favoriteDriver {
-        case "hamilton", "russell":
-            return Color(red: 0, green: 0.63, blue: 0.60)
-        case "leclerc", "sainz":
-            return Color(red: 0.65, green: 0.02, blue: 0.10)
-        case "verstappen", "perez":
-            return Color(red: 0.11, green: 0.12, blue: 0.27)
-        case "alonso", "stroll":
-            return Color(red: 0, green: 0.35, blue: 0.31)
-        case "norris", "piastri":
-            return Color(red: 1, green: 0.50, blue: 0)
-        case "gasly", "ocon":
-            return Color(red: 0, green: 0.47, blue: 0.76)
-        case "albon", "sargeant":
-            return Color(red: 0.02, green: 0.12, blue: 0.26)
-        case "bottas", "zhou":
-            return Color(red: 0, green: 0.91, blue: 0.20)
-        case "magnussen", "hulkenberg":
-            return Color(red: 0.97, green: 0.13, blue: 0.22)
-        case "ricciardo", "tsunoda":
-            return Color(red: 0.02, green: 0.12, blue: 0.24)
-        default:
-            return .red
-        }
-    }
+    
     
     var body: some View {
         ZStack{
             ContainerRelativeShape().fill(LinearGradient(
-                gradient: Gradient(colors: [.white, .white, usesTeamColors ? teamColor(): .red, usesTeamColors ? teamColor(): .red]),
+                gradient: Gradient(colors: [.white, .white, usesTeamColors ? teamColor(for: favoriteDriver): .red, usesTeamColors ? teamColor(for : favoriteDriver): .red]),
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )).ignoresSafeArea()
@@ -64,7 +39,7 @@ struct TitleScreenSettingsView: View {
                     }
                 }
                 .pickerStyle(.wheel)
-                .background(RoundedRectangle(cornerRadius: 30).fill(usesTeamColors ? teamColor(): .red).opacity(0.3))
+                .background(RoundedRectangle(cornerRadius: 30).fill(usesTeamColors ? teamColor(for: favoriteDriver): .red).opacity(0.3))
                 .padding()
                 
                 Spacer()

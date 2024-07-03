@@ -38,6 +38,9 @@
 		1A1D0A0C2C2E540C00B1C385 /* TitleScreenSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A0B2C2E540C00B1C385 /* TitleScreenSettingsView.swift */; };
 		1A1D0A0E2C2E546A00B1C385 /* TitleScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A0D2C2E546A00B1C385 /* TitleScreenView.swift */; };
 		1A1D0A142C35B32600B1C385 /* MainHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A132C35B32600B1C385 /* MainHubView.swift */; };
+		1A1D0A162C35BECA00B1C385 /* NewsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A152C35BECA00B1C385 /* NewsTabView.swift */; };
+		1A1D0A182C35C50B00B1C385 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A172C35C50B00B1C385 /* CustomTabView.swift */; };
+		1A1D0A1A2C35C72E00B1C385 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A192C35C72E00B1C385 /* ColorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		1A1D0A112C2E59A700B1C385 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A1D0A122C2E5A4D00B1C385 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		1A1D0A132C35B32600B1C385 /* MainHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHubView.swift; sourceTree = "<group>"; };
+		1A1D0A152C35BECA00B1C385 /* NewsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTabView.swift; sourceTree = "<group>"; };
+		1A1D0A172C35C50B00B1C385 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		1A1D0A192C35C72E00B1C385 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +122,10 @@
 				1A1D09C62C2E287700B1C385 /* F1SuperfanApp.swift */,
 				1A1D09C82C2E287700B1C385 /* ContentView.swift */,
 				1A1D0A132C35B32600B1C385 /* MainHubView.swift */,
+				1A1D0A172C35C50B00B1C385 /* CustomTabView.swift */,
+				1A1D0A152C35BECA00B1C385 /* NewsTabView.swift */,
 				1A1D0A0D2C2E546A00B1C385 /* TitleScreenView.swift */,
+				1A1D0A192C35C72E00B1C385 /* ColorManager.swift */,
 				1A1D0A0B2C2E540C00B1C385 /* TitleScreenSettingsView.swift */,
 				1A1D09CA2C2E287800B1C385 /* Assets.xcassets */,
 				1A1D09CC2C2E287800B1C385 /* Preview Content */,
@@ -267,8 +276,11 @@
 				1A1D09C92C2E287700B1C385 /* ContentView.swift in Sources */,
 				1A1D0A0E2C2E546A00B1C385 /* TitleScreenView.swift in Sources */,
 				1A1D0A0C2C2E540C00B1C385 /* TitleScreenSettingsView.swift in Sources */,
+				1A1D0A162C35BECA00B1C385 /* NewsTabView.swift in Sources */,
+				1A1D0A182C35C50B00B1C385 /* CustomTabView.swift in Sources */,
 				1A1D09C72C2E287700B1C385 /* F1SuperfanApp.swift in Sources */,
 				1A1D0A142C35B32600B1C385 /* MainHubView.swift in Sources */,
+				1A1D0A1A2C35C72E00B1C385 /* ColorManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
