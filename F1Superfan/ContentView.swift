@@ -10,10 +10,19 @@ import SwiftUI
 struct ContentView: View {
     @State private var usesTeamColors = true
     @State private var favoriteDriver = "sainz"
-    @State private var showSettings = false
+    
+    @State private var currentScreen = "title"
     
     var body: some View {
-        TitleScreenView(usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver, showSettings: $showSettings)
+        ZStack{
+            if currentScreen == "title" {
+                TitleScreenView(usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver, currentScreen: $currentScreen)
+            }
+            if currentScreen == "mainHub" {
+                MainHubView(usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver)
+            }
+        }
+        
     }
 }
 

@@ -37,6 +37,7 @@
 		1A1D0A0A2C2E4B5E00B1C385 /* tsunoda.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0A092C2E4B5E00B1C385 /* tsunoda.png */; };
 		1A1D0A0C2C2E540C00B1C385 /* TitleScreenSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A0B2C2E540C00B1C385 /* TitleScreenSettingsView.swift */; };
 		1A1D0A0E2C2E546A00B1C385 /* TitleScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A0D2C2E546A00B1C385 /* TitleScreenView.swift */; };
+		1A1D0A142C35B32600B1C385 /* MainHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A132C35B32600B1C385 /* MainHubView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		1A1D0A0D2C2E546A00B1C385 /* TitleScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenView.swift; sourceTree = "<group>"; };
 		1A1D0A112C2E59A700B1C385 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A1D0A122C2E5A4D00B1C385 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		1A1D0A132C35B32600B1C385 /* MainHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHubView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				1A1D09D42C2E2B7000B1C385 /* Info.plist */,
 				1A1D09C62C2E287700B1C385 /* F1SuperfanApp.swift */,
 				1A1D09C82C2E287700B1C385 /* ContentView.swift */,
+				1A1D0A132C35B32600B1C385 /* MainHubView.swift */,
 				1A1D0A0D2C2E546A00B1C385 /* TitleScreenView.swift */,
 				1A1D0A0B2C2E540C00B1C385 /* TitleScreenSettingsView.swift */,
 				1A1D09CA2C2E287800B1C385 /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 				1A1D0A0E2C2E546A00B1C385 /* TitleScreenView.swift in Sources */,
 				1A1D0A0C2C2E540C00B1C385 /* TitleScreenSettingsView.swift in Sources */,
 				1A1D09C72C2E287700B1C385 /* F1SuperfanApp.swift in Sources */,
+				1A1D0A142C35B32600B1C385 /* MainHubView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

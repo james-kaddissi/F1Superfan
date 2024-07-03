@@ -72,7 +72,6 @@ struct TitleScreenSettingsView: View {
             
         }
         
-        
     }
     
     struct TitleScreenSettingsView_Previews: PreviewProvider {
