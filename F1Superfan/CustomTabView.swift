@@ -30,7 +30,7 @@ struct CustomTabView: View {
                 .opacity(0.3)
                 .shadow(radius: 2)
             
-            HStack {
+            HStack{
                 ForEach(0..<tabIcons.count, id: \.self) { index in
                     Button {
                         withAnimation{
@@ -40,30 +40,36 @@ struct CustomTabView: View {
                         print(selectedTab)
                     } label: {
                         VStack (spacing: 8){
-                            Spacer()
+                            Spacer(minLength: 25)
                             
                             Image(systemName: tabIcons[index].image)
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                            Spacer()
                             
                             if index + 1 == selectedTab {
                                 Capsule()
                                     .frame(height: 8)
-                                    .foregroundColor(.blue)
+                                    .foregroundColor(usesTeamColors ? teamColor(for: favoriteDriver): .red)
                                     .matchedGeometryEffect(id: "SelectedTabId", in: animationNamespace)
-                                    .offset(y: 3)
+                                    .offset(y: -10)
                             } else {
                                 Capsule()
-                                    .frame(height: 8)
+                                    .frame(height: 2)
                                     .foregroundColor(.clear)
-                                    .offset(y: 3)
+                                    .offset(y: -10)
                             }
                         }
-                        .foregroundColor(index + 1 == selectedTab ? usesTeamColors ? teamColor(for: favoriteDriver): .red: .gray)
+                        .foregroundColor(index + 1 == selectedTab ? usesTeamColors ? teamColor(for: favoriteDriver): .red: .black)
+                        
                     }
                 }
             }
             .frame(height: 75)
-            .clipShape(Capsule())
+            .clipShape(
+                Capsule()
+            )
         }
-        .padding(.horizontal)
+        .padding(.horizontal, 10)
     }
 }
