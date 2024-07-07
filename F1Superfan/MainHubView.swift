@@ -18,8 +18,8 @@ struct MainHubView: View {
         TabView(selection: $selectedTab){
             Text("Tab Content 1").tag(1)
             Text("Tab Content 2").tag(2)
-            Text("Tab Content 3").tag(3)
-            Text("Tab Content 4").tag(4)
+            NewsTabView().tag(3)
+            DriverTabView(usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver).tag(4)
             Text("Tab Content 5").tag(5)
         }
         .overlay(alignment: .bottom) {
