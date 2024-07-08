@@ -54,7 +54,7 @@ struct DriverTabView: View {
                 }
                
                 if let driverStats = driverStats {
-                    DriverStatsView(driverStats: driverStats)
+                    DriverStatsView(driverStats: driverStats).padding(.top, 20)
                 } else {
                     Text("Loading...")
                         .onAppear {
@@ -93,11 +93,13 @@ struct DriverStatsView: View {
                     .scaleEffect(x: 1.0, y: 2)
                     .foregroundColor(.white)
                     .padding(.top, 30)
+                    .padding(.leading, 25)
                 Text("WDCS")
                     .font(Font.custom("Formula1-Display-Wide", size: 8))
                     .scaleEffect(x: 1.0, y: 2)
                     .foregroundColor(.white)
                     .padding(.top, 30)
+                    .padding(.leading, 25)
             }
             Spacer()
             VStack {
@@ -106,11 +108,13 @@ struct DriverStatsView: View {
                     .scaleEffect(x: 1.0, y: 2)
                     .foregroundColor(.white)
                     .padding(.top, 30)
+                    .padding(.leading, 15)
                 Text("Podiums")
                     .font(Font.custom("Formula1-Display-Wide", size: 8))
                     .scaleEffect(x: 1.0, y: 2)
                     .foregroundColor(.white)
                     .padding(.top, 30)
+                    .padding(.leading, 15)
             }
             Spacer()
         }

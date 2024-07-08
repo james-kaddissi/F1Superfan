@@ -26,8 +26,8 @@ struct CustomTabView: View {
         ZStack {
             Capsule()
                 .frame(height: 75)
-                .foregroundColor(usesTeamColors ? teamColor(for: favoriteDriver): .red)
-                .opacity(0.3)
+                .foregroundColor((selectedTab==4) ? .white : usesTeamColors ? teamColor(for: favoriteDriver): .red)
+                .opacity((selectedTab==4) ? 0.9 : 0.3)
                 .shadow(radius: 2)
             
             HStack{
