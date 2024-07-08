@@ -105,6 +105,8 @@
 		1A1D0AA72C3B8CDB00B1C385 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1D0AA62C3B8CDB00B1C385 /* FirebaseStorageCombine-Community */; };
 		1A1D0AA92C3B8CDB00B1C385 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1D0AA82C3B8CDB00B1C385 /* FirebaseVertexAI-Preview */; };
 		1A1D0AAC2C3B93DB00B1C385 /* FirebaseDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0AAB2C3B93DB00B1C385 /* FirebaseDatabase.swift */; };
+		1A1D0AAE2C3C699600B1C385 /* standingsainz.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0AAD2C3C699600B1C385 /* standingsainz.png */; };
+		1A1D0AB02C3C75E500B1C385 /* standinghamilton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0AAF2C3C75E500B1C385 /* standinghamilton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,6 +151,8 @@
 		1A1D0A1B2C3A17DC00B1C385 /* DriverTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTabView.swift; sourceTree = "<group>"; };
 		1A1D0A2B2C3B877D00B1C385 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A1D0AAB2C3B93DB00B1C385 /* FirebaseDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabase.swift; sourceTree = "<group>"; };
+		1A1D0AAD2C3C699600B1C385 /* standingsainz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = standingsainz.png; sourceTree = "<group>"; };
+		1A1D0AAF2C3C75E500B1C385 /* standinghamilton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = standinghamilton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +290,8 @@
 		1A1D0A102C2E55EC00B1C385 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1A1D0AAF2C3C75E500B1C385 /* standinghamilton.png */,
+				1A1D0AAD2C3C699600B1C385 /* standingsainz.png */,
 				1A1D09FF2C2E4AD200B1C385 /* bottas.png */,
 				1A1D09F12C2E48FB00B1C385 /* stroll.png */,
 				1A1D09F32C2E492400B1C385 /* norris.png */,
@@ -456,6 +462,7 @@
 				1A1D0A2C2C3B877D00B1C385 /* GoogleService-Info.plist in Resources */,
 				1A1D09F82C2E497E00B1C385 /* gasly.png in Resources */,
 				1A1D09D92C2E2C5500B1C385 /* Formula1-Regular.otf in Resources */,
+				1A1D0AB02C3C75E500B1C385 /* standinghamilton.png in Resources */,
 				1A1D09DA2C2E2C5500B1C385 /* Formula1-Bold.otf in Resources */,
 				1A1D09E82C2E46CA00B1C385 /* russell.png in Resources */,
 				1A1D09E62C2E46C100B1C385 /* hamilton.png in Resources */,
@@ -463,6 +470,7 @@
 				1A1D09F22C2E48FB00B1C385 /* stroll.png in Resources */,
 				1A1D09D82C2E2C5500B1C385 /* Formula1-Wide.otf in Resources */,
 				1A1D09F62C2E494A00B1C385 /* piastri.png in Resources */,
+				1A1D0AAE2C3C699600B1C385 /* standingsainz.png in Resources */,
 				1A1D09F02C2E48B800B1C385 /* alonso.png in Resources */,
 				1A1D09FC2C2E4A8E00B1C385 /* albon.png in Resources */,
 				1A1D09EC2C2E482100B1C385 /* verstappen.png in Resources */,

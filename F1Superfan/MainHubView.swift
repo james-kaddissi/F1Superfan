@@ -20,7 +20,7 @@ struct MainHubView: View {
             Text("Tab Content 2").tag(2)
             NewsTabView().tag(3)
             DriverTabView(usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver).tag(4)
-            Text("Tab Content 5").tag(5)
+            TitleScreenSettingsView(usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver).tag(5)
         }
         .overlay(alignment: .bottom) {
             CustomTabView(selectedTab: $selectedTab, usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver)
