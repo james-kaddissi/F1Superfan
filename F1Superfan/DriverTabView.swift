@@ -8,9 +8,19 @@
 import Foundation
 import SwiftUI
 
+
 struct DriverTabView: View {
     @Binding var usesTeamColors: Bool
     @Binding var favoriteDriver: String
+    @State private var driverStats: DriverStats?
+    
+    private func fetchDriverStats(for driverName: String) {
+            FirebaseService.shared.fetchDriverStats(for: driverName) { stats in
+                DispatchQueue.main.async {
+                    self.driverStats = stats
+                }
+            }
+        }
     
     var body: some View {
         ZStack{
@@ -42,11 +52,67 @@ struct DriverTabView: View {
                     }
                     
                 }
-                HStack{
-                    Text("Wins:")
+               
+                if let driverStats = driverStats {
+                    DriverStatsView(driverStats: driverStats)
+                } else {
+                    Text("Loading...")
+                        .onAppear {
+                            fetchDriverStats(for: favoriteDriver)
+                        }
                 }
+                
                 Spacer()
             }
+        }
+    }
+}
+
+struct DriverStatsView: View {
+    let driverStats: DriverStats
+
+    var body: some View {
+        HStack {
+            Spacer()
+            VStack {
+                Text("\(driverStats.wins)")
+                    .font(Font.custom("Formula1-Display-Wide", size: 20))
+                    .scaleEffect(x: 1.0, y: 2)
+                    .foregroundColor(.white)
+                    .padding(.top, 30)
+                Text("Wins")
+                    .font(Font.custom("Formula1-Display-Wide", size: 8))
+                    .scaleEffect(x: 1.0, y: 2)
+                    .foregroundColor(.white)
+                    .padding(.top, 30)
+            }
+            Spacer()
+            VStack {
+                Text("\(driverStats.wdcs)")
+                    .font(Font.custom("Formula1-Display-Wide", size: 20))
+                    .scaleEffect(x: 1.0, y: 2)
+                    .foregroundColor(.white)
+                    .padding(.top, 30)
+                Text("WDCS")
+                    .font(Font.custom("Formula1-Display-Wide", size: 8))
+                    .scaleEffect(x: 1.0, y: 2)
+                    .foregroundColor(.white)
+                    .padding(.top, 30)
+            }
+            Spacer()
+            VStack {
+                Text("\(driverStats.podiums)")
+                    .font(Font.custom("Formula1-Display-Wide", size: 20))
+                    .scaleEffect(x: 1.0, y: 2)
+                    .foregroundColor(.white)
+                    .padding(.top, 30)
+                Text("Podiums")
+                    .font(Font.custom("Formula1-Display-Wide", size: 8))
+                    .scaleEffect(x: 1.0, y: 2)
+                    .foregroundColor(.white)
+                    .padding(.top, 30)
+            }
+            Spacer()
         }
     }
 }
