@@ -14,10 +14,48 @@ class FirebaseService {
 
     private let database = Database.database()
     private let driverStatsRef: DatabaseReference
+    private let newsFeedRef: DatabaseReference
 
     private init() {
         driverStatsRef = database.reference(withPath: "driverStats")
+        newsFeedRef = database.reference(withPath: "newsFeed")
     }
+    
+    func fetchNewsFeed(completion: @escaping (NewsFeed?) -> Void) {
+            newsFeedRef.observeSingleEvent(of: .value) { snapshot in
+                guard let value = snapshot.value as? [String: Any] else {
+                    completion(nil)
+                    return
+                }
+                
+                var newsFeed = NewsFeed(feed: [])
+                
+                for (_, sourceData) in value {
+                    guard let source = sourceData as? [String: [String: [String: String]]] else {
+                        continue
+                    }
+                    
+                    for (_, timestampData) in source {
+                        for (_, storyData) in timestampData {
+                            if let title = storyData["title"],
+                               let blurb = storyData["blurb"],
+                               let url = storyData["url"] {
+                                
+                                let components = title.components(separatedBy: ":")
+                                let time = components.dropLast().joined(separator: ":")
+                                
+                                let newsStory = NewsStory(time: time, title: title, blurb: blurb, url: url)
+                                newsFeed.feed.append(newsStory)
+                            }
+                        }
+                    }
+                }
+                
+                newsFeed.feed.sort { $0.time > $1.time }
+                
+                completion(newsFeed)
+            }
+        }
 
     func fetchDriverStats(for driverName: String, completion: @escaping (DriverStats?) -> Void) {
         driverStatsRef.child(driverName).observeSingleEvent(of: .value) { snapshot in
@@ -69,4 +107,15 @@ struct DriverStats {
         let inches = height % 12
         return "\(feet)' \(inches)\""
     }
+}
+
+struct NewsStory: Identifiable {
+    let id = UUID()
+    let time: String
+    let title: String
+    let blurb: String
+    let url: String
+}
+struct NewsFeed {
+    var feed: [NewsStory]
 }
