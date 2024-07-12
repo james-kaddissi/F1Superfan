@@ -11,9 +11,6 @@
 		1A1D09C92C2E287700B1C385 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D09C82C2E287700B1C385 /* ContentView.swift */; };
 		1A1D09CB2C2E287800B1C385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09CA2C2E287800B1C385 /* Assets.xcassets */; };
 		1A1D09CE2C2E287800B1C385 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09CD2C2E287800B1C385 /* Preview Assets.xcassets */; };
-		1A1D09D82C2E2C5500B1C385 /* Formula1-Wide.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09D52C2E2C5500B1C385 /* Formula1-Wide.otf */; };
-		1A1D09D92C2E2C5500B1C385 /* Formula1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09D62C2E2C5500B1C385 /* Formula1-Regular.otf */; };
-		1A1D09DA2C2E2C5500B1C385 /* Formula1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09D72C2E2C5500B1C385 /* Formula1-Bold.otf */; };
 		1A1D09DC2C2E2FE200B1C385 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09DB2C2E2FE100B1C385 /* image.png */; };
 		1A1D09E42C2E46A600B1C385 /* leclerc.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09E32C2E46A600B1C385 /* leclerc.png */; };
 		1A1D09E62C2E46C100B1C385 /* hamilton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D09E52C2E46C100B1C385 /* hamilton.png */; };
@@ -40,7 +37,6 @@
 		1A1D0A142C35B32600B1C385 /* MainHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A132C35B32600B1C385 /* MainHubView.swift */; };
 		1A1D0A162C35BECA00B1C385 /* NewsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A152C35BECA00B1C385 /* NewsTabView.swift */; };
 		1A1D0A182C35C50B00B1C385 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A172C35C50B00B1C385 /* CustomTabView.swift */; };
-		1A1D0A1A2C35C72E00B1C385 /* ReferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A192C35C72E00B1C385 /* ReferenceManager.swift */; };
 		1A1D0A1C2C3A17DC00B1C385 /* DriverTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A1B2C3A17DC00B1C385 /* DriverTabView.swift */; };
 		1A1D0A2C2C3B877D00B1C385 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0A2B2C3B877D00B1C385 /* GoogleService-Info.plist */; };
 		1A1D0A2F2C3B89C300B1C385 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1D0A2E2C3B89C300B1C385 /* FirebaseAnalytics */; };
@@ -107,7 +103,50 @@
 		1A1D0AAC2C3B93DB00B1C385 /* FirebaseDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0AAB2C3B93DB00B1C385 /* FirebaseDatabase.swift */; };
 		1A1D0AAE2C3C699600B1C385 /* standingsainz.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0AAD2C3C699600B1C385 /* standingsainz.png */; };
 		1A1D0AB02C3C75E500B1C385 /* standinghamilton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0AAF2C3C75E500B1C385 /* standinghamilton.png */; };
+		1A1D0AB72C3E417D00B1C385 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1D0AB62C3E417D00B1C385 /* WidgetKit.framework */; };
+		1A1D0AB92C3E417D00B1C385 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1D0AB82C3E417D00B1C385 /* SwiftUI.framework */; };
+		1A1D0ABC2C3E417D00B1C385 /* driverWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0ABB2C3E417D00B1C385 /* driverWidgetBundle.swift */; };
+		1A1D0ABE2C3E417D00B1C385 /* driverWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0ABD2C3E417D00B1C385 /* driverWidgetLiveActivity.swift */; };
+		1A1D0AC02C3E417D00B1C385 /* driverWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0ABF2C3E417D00B1C385 /* driverWidget.swift */; };
+		1A1D0AC22C3E417D00B1C385 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0AC12C3E417D00B1C385 /* AppIntent.swift */; };
+		1A1D0AC42C3E417E00B1C385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0AC32C3E417E00B1C385 /* Assets.xcassets */; };
+		1A1D0AC92C3E417E00B1C385 /* driverWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1A1D0AB52C3E417D00B1C385 /* driverWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1A1D0AD02C3F346100B1C385 /* ReferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0A192C35C72E00B1C385 /* ReferenceManager.swift */; };
+		1A1D0AD52C3F35BE00B1C385 /* WidgetReferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0AD42C3F35BE00B1C385 /* WidgetReferenceManager.swift */; };
+		1A1D0AD62C3F35BE00B1C385 /* WidgetReferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1D0AD42C3F35BE00B1C385 /* WidgetReferenceManager.swift */; };
+		1A1D0AD82C40E25500B1C385 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0AD72C40E25500B1C385 /* Images */; };
+		1A1D0AD92C40E25500B1C385 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0AD72C40E25500B1C385 /* Images */; };
+		1A1D0AE12C40E8B900B1C385 /* Formula1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0ADE2C40E8B900B1C385 /* Formula1-Regular.otf */; };
+		1A1D0AE22C40E8B900B1C385 /* Formula1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0ADE2C40E8B900B1C385 /* Formula1-Regular.otf */; };
+		1A1D0AE32C40E8B900B1C385 /* Formula1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0ADF2C40E8B900B1C385 /* Formula1-Bold.otf */; };
+		1A1D0AE42C40E8B900B1C385 /* Formula1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0ADF2C40E8B900B1C385 /* Formula1-Bold.otf */; };
+		1A1D0AE52C40E8B900B1C385 /* Formula1-Wide.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0AE02C40E8B900B1C385 /* Formula1-Wide.otf */; };
+		1A1D0AE62C40E8B900B1C385 /* Formula1-Wide.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1D0AE02C40E8B900B1C385 /* Formula1-Wide.otf */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A1D0AC62C3E417E00B1C385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A1D09BB2C2E287700B1C385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A1D0AB42C3E417D00B1C385;
+			remoteInfo = driverWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A1D0AC82C3E417E00B1C385 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1A1D0AC92C3E417E00B1C385 /* driverWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A1D09C32C2E287700B1C385 /* F1Superfan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = F1Superfan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,9 +155,6 @@
 		1A1D09CA2C2E287800B1C385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A1D09CD2C2E287800B1C385 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A1D09D42C2E2B7000B1C385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		1A1D09D52C2E2C5500B1C385 /* Formula1-Wide.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Wide.otf"; sourceTree = "<group>"; };
-		1A1D09D62C2E2C5500B1C385 /* Formula1-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Regular.otf"; sourceTree = "<group>"; };
-		1A1D09D72C2E2C5500B1C385 /* Formula1-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Bold.otf"; sourceTree = "<group>"; };
 		1A1D09DB2C2E2FE100B1C385 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		1A1D09E32C2E46A600B1C385 /* leclerc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leclerc.png; sourceTree = "<group>"; };
 		1A1D09E52C2E46C100B1C385 /* hamilton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamilton.png; sourceTree = "<group>"; };
@@ -153,6 +189,22 @@
 		1A1D0AAB2C3B93DB00B1C385 /* FirebaseDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabase.swift; sourceTree = "<group>"; };
 		1A1D0AAD2C3C699600B1C385 /* standingsainz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = standingsainz.png; sourceTree = "<group>"; };
 		1A1D0AAF2C3C75E500B1C385 /* standinghamilton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = standinghamilton.png; sourceTree = "<group>"; };
+		1A1D0AB52C3E417D00B1C385 /* driverWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = driverWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1D0AB62C3E417D00B1C385 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1A1D0AB82C3E417D00B1C385 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1A1D0ABB2C3E417D00B1C385 /* driverWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = driverWidgetBundle.swift; sourceTree = "<group>"; };
+		1A1D0ABD2C3E417D00B1C385 /* driverWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = driverWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		1A1D0ABF2C3E417D00B1C385 /* driverWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = driverWidget.swift; sourceTree = "<group>"; };
+		1A1D0AC12C3E417D00B1C385 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		1A1D0AC32C3E417E00B1C385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A1D0AC52C3E417E00B1C385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1D0ACD2C3E43C600B1C385 /* driverWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = driverWidgetExtension.entitlements; sourceTree = "<group>"; };
+		1A1D0ACE2C3E43D900B1C385 /* F1Superfan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = F1Superfan.entitlements; sourceTree = "<group>"; };
+		1A1D0AD42C3F35BE00B1C385 /* WidgetReferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetReferenceManager.swift; sourceTree = "<group>"; };
+		1A1D0AD72C40E25500B1C385 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; sourceTree = "<group>"; };
+		1A1D0ADE2C40E8B900B1C385 /* Formula1-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Regular.otf"; sourceTree = "<group>"; };
+		1A1D0ADF2C40E8B900B1C385 /* Formula1-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Bold.otf"; sourceTree = "<group>"; };
+		1A1D0AE02C40E8B900B1C385 /* Formula1-Wide.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Wide.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,15 +276,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A1D0AB22C3E417D00B1C385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1D0AB92C3E417D00B1C385 /* SwiftUI.framework in Frameworks */,
+				1A1D0AB72C3E417D00B1C385 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1A1D09BA2C2E287700B1C385 = {
 			isa = PBXGroup;
 			children = (
+				1A1D0ADD2C40E89C00B1C385 /* Fonts */,
+				1A1D0ACD2C3E43C600B1C385 /* driverWidgetExtension.entitlements */,
 				1A1D0A122C2E5A4D00B1C385 /* LICENSE.md */,
 				1A1D0A112C2E59A700B1C385 /* README.md */,
 				1A1D09C52C2E287700B1C385 /* F1Superfan */,
+				1A1D0ABA2C3E417D00B1C385 /* driverWidget */,
 				1A1D09C42C2E287700B1C385 /* Products */,
 				1A1D0AAA2C3B8D4900B1C385 /* Frameworks */,
 			);
@@ -242,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				1A1D09C32C2E287700B1C385 /* F1Superfan.app */,
+				1A1D0AB52C3E417D00B1C385 /* driverWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,8 +314,8 @@
 		1A1D09C52C2E287700B1C385 /* F1Superfan */ = {
 			isa = PBXGroup;
 			children = (
+				1A1D0ACE2C3E43D900B1C385 /* F1Superfan.entitlements */,
 				1A1D0A102C2E55EC00B1C385 /* Images */,
-				1A1D0A0F2C2E55DD00B1C385 /* Fonts */,
 				1A1D09D42C2E2B7000B1C385 /* Info.plist */,
 				1A1D0AAB2C3B93DB00B1C385 /* FirebaseDatabase.swift */,
 				1A1D09C62C2E287700B1C385 /* F1SuperfanApp.swift */,
@@ -261,8 +326,8 @@
 				1A1D0A172C35C50B00B1C385 /* CustomTabView.swift */,
 				1A1D0A152C35BECA00B1C385 /* NewsTabView.swift */,
 				1A1D0A0D2C2E546A00B1C385 /* TitleScreenView.swift */,
-				1A1D0A192C35C72E00B1C385 /* ReferenceManager.swift */,
 				1A1D0A0B2C2E540C00B1C385 /* TitleScreenSettingsView.swift */,
+				1A1D0A192C35C72E00B1C385 /* ReferenceManager.swift */,
 				1A1D09CA2C2E287800B1C385 /* Assets.xcassets */,
 				1A1D09CC2C2E287800B1C385 /* Preview Content */,
 			);
@@ -277,19 +342,10 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		1A1D0A0F2C2E55DD00B1C385 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				1A1D09D72C2E2C5500B1C385 /* Formula1-Bold.otf */,
-				1A1D09D62C2E2C5500B1C385 /* Formula1-Regular.otf */,
-				1A1D09D52C2E2C5500B1C385 /* Formula1-Wide.otf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		1A1D0A102C2E55EC00B1C385 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1A1D0AD72C40E25500B1C385 /* Images */,
 				1A1D0AAF2C3C75E500B1C385 /* standinghamilton.png */,
 				1A1D0AAD2C3C699600B1C385 /* standingsainz.png */,
 				1A1D09FF2C2E4AD200B1C385 /* bottas.png */,
@@ -320,8 +376,34 @@
 		1A1D0AAA2C3B8D4900B1C385 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A1D0AB62C3E417D00B1C385 /* WidgetKit.framework */,
+				1A1D0AB82C3E417D00B1C385 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A1D0ABA2C3E417D00B1C385 /* driverWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1A1D0ABB2C3E417D00B1C385 /* driverWidgetBundle.swift */,
+				1A1D0ABD2C3E417D00B1C385 /* driverWidgetLiveActivity.swift */,
+				1A1D0ABF2C3E417D00B1C385 /* driverWidget.swift */,
+				1A1D0AC12C3E417D00B1C385 /* AppIntent.swift */,
+				1A1D0AC32C3E417E00B1C385 /* Assets.xcassets */,
+				1A1D0AC52C3E417E00B1C385 /* Info.plist */,
+				1A1D0AD42C3F35BE00B1C385 /* WidgetReferenceManager.swift */,
+			);
+			path = driverWidget;
+			sourceTree = "<group>";
+		};
+		1A1D0ADD2C40E89C00B1C385 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1A1D0ADF2C40E8B900B1C385 /* Formula1-Bold.otf */,
+				1A1D0ADE2C40E8B900B1C385 /* Formula1-Regular.otf */,
+				1A1D0AE02C40E8B900B1C385 /* Formula1-Wide.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,10 +416,12 @@
 				1A1D09BF2C2E287700B1C385 /* Sources */,
 				1A1D09C02C2E287700B1C385 /* Frameworks */,
 				1A1D09C12C2E287700B1C385 /* Resources */,
+				1A1D0AC82C3E417E00B1C385 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1A1D0AC72C3E417E00B1C385 /* PBXTargetDependency */,
 			);
 			name = F1Superfan;
 			packageProductDependencies = (
@@ -407,6 +491,23 @@
 			productReference = 1A1D09C32C2E287700B1C385 /* F1Superfan.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1A1D0AB42C3E417D00B1C385 /* driverWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A1D0ACA2C3E417E00B1C385 /* Build configuration list for PBXNativeTarget "driverWidgetExtension" */;
+			buildPhases = (
+				1A1D0AB12C3E417D00B1C385 /* Sources */,
+				1A1D0AB22C3E417D00B1C385 /* Frameworks */,
+				1A1D0AB32C3E417D00B1C385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = driverWidgetExtension;
+			productName = driverWidgetExtension;
+			productReference = 1A1D0AB52C3E417D00B1C385 /* driverWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -418,6 +519,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					1A1D09C22C2E287700B1C385 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					1A1D0AB42C3E417D00B1C385 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -439,6 +543,7 @@
 			projectRoot = "";
 			targets = (
 				1A1D09C22C2E287700B1C385 /* F1Superfan */,
+				1A1D0AB42C3E417D00B1C385 /* driverWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -449,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1D0A062C2E4B2600B1C385 /* hulkenberg.png in Resources */,
+				1A1D0AE32C40E8B900B1C385 /* Formula1-Bold.otf in Resources */,
 				1A1D0A042C2E4B0500B1C385 /* magnussen.png in Resources */,
 				1A1D09FE2C2E4AAC00B1C385 /* sargeant.png in Resources */,
 				1A1D09CE2C2E287800B1C385 /* Preview Assets.xcassets in Resources */,
@@ -458,17 +564,17 @@
 				1A1D09EA2C2E473F00B1C385 /* sainz.png in Resources */,
 				1A1D09EE2C2E486600B1C385 /* perez.png in Resources */,
 				1A1D0A082C2E4B3E00B1C385 /* ricciardo.png in Resources */,
+				1A1D0AD82C40E25500B1C385 /* Images in Resources */,
 				1A1D0A0A2C2E4B5E00B1C385 /* tsunoda.png in Resources */,
 				1A1D0A2C2C3B877D00B1C385 /* GoogleService-Info.plist in Resources */,
+				1A1D0AE12C40E8B900B1C385 /* Formula1-Regular.otf in Resources */,
 				1A1D09F82C2E497E00B1C385 /* gasly.png in Resources */,
-				1A1D09D92C2E2C5500B1C385 /* Formula1-Regular.otf in Resources */,
 				1A1D0AB02C3C75E500B1C385 /* standinghamilton.png in Resources */,
-				1A1D09DA2C2E2C5500B1C385 /* Formula1-Bold.otf in Resources */,
 				1A1D09E82C2E46CA00B1C385 /* russell.png in Resources */,
 				1A1D09E62C2E46C100B1C385 /* hamilton.png in Resources */,
+				1A1D0AE52C40E8B900B1C385 /* Formula1-Wide.otf in Resources */,
 				1A1D0A002C2E4AD200B1C385 /* bottas.png in Resources */,
 				1A1D09F22C2E48FB00B1C385 /* stroll.png in Resources */,
-				1A1D09D82C2E2C5500B1C385 /* Formula1-Wide.otf in Resources */,
 				1A1D09F62C2E494A00B1C385 /* piastri.png in Resources */,
 				1A1D0AAE2C3C699600B1C385 /* standingsainz.png in Resources */,
 				1A1D09F02C2E48B800B1C385 /* alonso.png in Resources */,
@@ -480,6 +586,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A1D0AB32C3E417D00B1C385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1D0AD92C40E25500B1C385 /* Images in Resources */,
+				1A1D0AE42C40E8B900B1C385 /* Formula1-Bold.otf in Resources */,
+				1A1D0AE22C40E8B900B1C385 /* Formula1-Regular.otf in Resources */,
+				1A1D0AC42C3E417E00B1C385 /* Assets.xcassets in Resources */,
+				1A1D0AE62C40E8B900B1C385 /* Formula1-Wide.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -488,19 +606,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1D09C92C2E287700B1C385 /* ContentView.swift in Sources */,
+				1A1D0AD02C3F346100B1C385 /* ReferenceManager.swift in Sources */,
 				1A1D0A0E2C2E546A00B1C385 /* TitleScreenView.swift in Sources */,
 				1A1D0A0C2C2E540C00B1C385 /* TitleScreenSettingsView.swift in Sources */,
+				1A1D0AD52C3F35BE00B1C385 /* WidgetReferenceManager.swift in Sources */,
 				1A1D0A162C35BECA00B1C385 /* NewsTabView.swift in Sources */,
 				1A1D0A182C35C50B00B1C385 /* CustomTabView.swift in Sources */,
 				1A1D0AAC2C3B93DB00B1C385 /* FirebaseDatabase.swift in Sources */,
 				1A1D0A1C2C3A17DC00B1C385 /* DriverTabView.swift in Sources */,
 				1A1D09C72C2E287700B1C385 /* F1SuperfanApp.swift in Sources */,
 				1A1D0A142C35B32600B1C385 /* MainHubView.swift in Sources */,
-				1A1D0A1A2C35C72E00B1C385 /* ReferenceManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1D0AB12C3E417D00B1C385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1D0AC02C3E417D00B1C385 /* driverWidget.swift in Sources */,
+				1A1D0AC22C3E417D00B1C385 /* AppIntent.swift in Sources */,
+				1A1D0ABE2C3E417D00B1C385 /* driverWidgetLiveActivity.swift in Sources */,
+				1A1D0ABC2C3E417D00B1C385 /* driverWidgetBundle.swift in Sources */,
+				1A1D0AD62C3F35BE00B1C385 /* WidgetReferenceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A1D0AC72C3E417E00B1C385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A1D0AB42C3E417D00B1C385 /* driverWidgetExtension */;
+			targetProxy = 1A1D0AC62C3E417E00B1C385 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1A1D09CF2C2E287800B1C385 /* Debug */ = {
@@ -625,8 +764,10 @@
 		1A1D09D22C2E287800B1C385 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = F1Superfan/F1Superfan.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"F1Superfan/Preview Content\"";
@@ -655,8 +796,10 @@
 		1A1D09D32C2E287800B1C385 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = F1Superfan/F1Superfan.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"F1Superfan/Preview Content\"";
@@ -682,6 +825,62 @@
 			};
 			name = Release;
 		};
+		1A1D0ACB2C3E417E00B1C385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = driverWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2TZ26MU22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = driverWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = driverWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "James-Kaddissi.F1Superfan.driverWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A1D0ACC2C3E417E00B1C385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = driverWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2TZ26MU22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = driverWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = driverWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "James-Kaddissi.F1Superfan.driverWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -699,6 +898,15 @@
 			buildConfigurations = (
 				1A1D09D22C2E287800B1C385 /* Debug */,
 				1A1D09D32C2E287800B1C385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A1D0ACA2C3E417E00B1C385 /* Build configuration list for PBXNativeTarget "driverWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1D0ACB2C3E417E00B1C385 /* Debug */,
+				1A1D0ACC2C3E417E00B1C385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
