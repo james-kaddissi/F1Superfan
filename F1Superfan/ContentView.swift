@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct ContentView: View {
     @State private var usesTeamColors = true
@@ -29,6 +30,13 @@ struct ContentView: View {
                         userDefaults.set(favoriteDriver, forKey: "favoriteDriver")
                         userDefaults.set(stats.number, forKey: "driverNumber")
                     }
+                }.onChange(of: favoriteDriver) { newDriver in
+                    driverStatsManager.fetchDriverStats(for: newDriver)
+                    if let userDefaults = UserDefaults(suiteName: "group.com.F1Superfan") {
+                        userDefaults.set(favoriteDriver, forKey: "favoriteDriver")
+                        userDefaults.set(stats.number, forKey: "driverNumber")
+                    }
+                    WidgetCenter.shared.reloadAllTimelines()
                 }
             } else {
                 ZStack {
@@ -38,9 +46,6 @@ struct ContentView: View {
                     driverStatsManager.fetchDriverStats(for: favoriteDriver)
                 }
             }
-        }
-        .onChange(of: favoriteDriver) { newDriver in
-            driverStatsManager.fetchDriverStats(for: newDriver)
         }
         
     }

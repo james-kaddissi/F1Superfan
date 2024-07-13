@@ -16,20 +16,25 @@ struct Provider: AppIntentTimelineProvider {
     }
 
     func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> SimpleEntry {
-        SimpleEntry(date: Date(), favoriteDriver: "sainz", driverNumber: 55)
+        let (favoriteDriver, driverNumber) = readUserDefaults()
+        return SimpleEntry(date: Date(), favoriteDriver: favoriteDriver, driverNumber: driverNumber)
     }
     
     func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<SimpleEntry> {
         var entries: [SimpleEntry] = []
-
-        if let userDefaults = UserDefaults(suiteName: "group.com.F1Superfan") {
-            let favoriteDriver = userDefaults.string(forKey: "favoriteDriver")!
-            let driverNumber = userDefaults.integer(forKey: "driverNumber")
-            
-            entries.append(SimpleEntry(date: Date(), favoriteDriver: favoriteDriver, driverNumber: driverNumber))
-        }
-
+        let (favoriteDriver, driverNumber) = readUserDefaults()
+        entries.append(SimpleEntry(date: Date(), favoriteDriver: favoriteDriver, driverNumber: driverNumber))
         return Timeline(entries: entries, policy: .atEnd)
+    }
+    
+    private func readUserDefaults() -> (String, Int) {
+        var favoriteDriver = ""
+        var driverNumber = 0
+        if let userDefaults = UserDefaults(suiteName: "group.com.F1Superfan") {
+            favoriteDriver = userDefaults.string(forKey: "favoriteDriver") ?? ""
+            driverNumber = userDefaults.integer(forKey: "driverNumber")
+        }
+        return (favoriteDriver, driverNumber)
     }
 }
 
