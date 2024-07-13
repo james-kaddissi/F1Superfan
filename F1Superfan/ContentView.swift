@@ -10,20 +10,41 @@ import SwiftUI
 struct ContentView: View {
     @State private var usesTeamColors = true
     @State private var favoriteDriver = "sainz"
-    
+    @StateObject private var driverStatsManager = DriverStatsManager()
     @State private var currentScreen = "title"
     
     var body: some View {
         ZStack{
-            if currentScreen == "title" {
-                TitleScreenView(usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver, currentScreen: $currentScreen)
+            if let stats = driverStatsManager.driverStats {
+                ZStack{
+                    if currentScreen == "title" {
+                        TitleScreenView(usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver, currentScreen: $currentScreen)
+                    }
+                    if currentScreen == "mainHub" {
+                        MainHubView(usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver)
+                    }
+                }
+                .onAppear {
+                    if let userDefaults = UserDefaults(suiteName: "group.com.F1Superfan") {
+                        userDefaults.set(favoriteDriver, forKey: "favoriteDriver")
+                        userDefaults.set(stats.number, forKey: "driverNumber")
+                    }
+                }
+            } else {
+                ZStack {
+                    TitleScreenSettingsView(usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver)
+                }
+                .onAppear {
+                    driverStatsManager.fetchDriverStats(for: favoriteDriver)
+                }
             }
-            if currentScreen == "mainHub" {
-                MainHubView(usesTeamColors: $usesTeamColors, favoriteDriver: $favoriteDriver)
-            }
+        }
+        .onChange(of: favoriteDriver) { newDriver in
+            driverStatsManager.fetchDriverStats(for: newDriver)
         }
         
     }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -32,3 +53,14 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+class DriverStatsManager: ObservableObject {
+    @Published var driverStats: DriverStats?
+    
+    func fetchDriverStats(for driverName: String) {
+        FirebaseService.shared.fetchDriverStats(for: driverName) { stats in
+            DispatchQueue.main.async {
+                self.driverStats = stats
+            }
+        }
+    }
+}

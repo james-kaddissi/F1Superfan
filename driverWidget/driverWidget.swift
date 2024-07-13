@@ -8,24 +8,25 @@
 import WidgetKit
 import SwiftUI
 
+
 struct Provider: AppIntentTimelineProvider {
+
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), favoriteDriver: "sainz")
+        SimpleEntry(date: Date(), favoriteDriver: "", driverNumber: 0)
     }
 
     func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> SimpleEntry {
-        SimpleEntry(date: Date(), favoriteDriver: "sainz")
+        SimpleEntry(date: Date(), favoriteDriver: "sainz", driverNumber: 55)
     }
     
     func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<SimpleEntry> {
         var entries: [SimpleEntry] = []
 
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, favoriteDriver: "sainz")
-            entries.append(entry)
+        if let userDefaults = UserDefaults(suiteName: "group.com.F1Superfan") {
+            let favoriteDriver = userDefaults.string(forKey: "favoriteDriver")!
+            let driverNumber = userDefaults.integer(forKey: "driverNumber")
+            
+            entries.append(SimpleEntry(date: Date(), favoriteDriver: favoriteDriver, driverNumber: driverNumber))
         }
 
         return Timeline(entries: entries, policy: .atEnd)
@@ -35,12 +36,12 @@ struct Provider: AppIntentTimelineProvider {
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let favoriteDriver: String
+    let driverNumber: Int
 }
 
 struct driverWidgetEntryView : View {
     var entry: Provider.Entry
     @Environment(\.widgetFamily) var family
-
     
     var body: some View {
         switch family{
@@ -65,6 +66,7 @@ struct driverWidgetEntryView : View {
                     )
                     .opacity(0.8)
                     .blur(radius: 0.5)
+                    
                 
                 Text(entry.date, style: .time)
                     .font(Font.custom("Formula1-Display-Wide", size: 12))
@@ -73,8 +75,51 @@ struct driverWidgetEntryView : View {
                     .shadow(color: .black, radius: 1)
                     .padding(.top, 95)
                     .ignoresSafeArea()
+                Text("#\(entry.driverNumber)")
                 
                 
+                
+                
+            }
+        case.systemMedium:
+            ZStack {
+                ContainerRelativeShape()
+                    .fill(wteamColor(for: entry.favoriteDriver))
+                Image(entry.favoriteDriver)
+                    .resizable()
+                    .frame(width: 155, height: 155)
+                    .overlay(
+                        LinearGradient(
+                            gradient: Gradient(colors: [.clear, .clear, .clear,  wteamColor(for: entry.favoriteDriver), wteamColor(for: entry.favoriteDriver)]),
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+                    .mask(
+                        Image(entry.favoriteDriver)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    )
+                    .opacity(0.8)
+                    .blur(radius: 0.5)
+                    .padding(.leading, 145)
+                
+                Text(entry.date, style: .time)
+                    .font(Font.custom("Formula1-Display-Wide", size: 22))
+                    .foregroundColor(.white)
+                    .scaleEffect(x: 1.0, y: 1.4)
+                    .shadow(color: .black, radius: 1)
+                    .padding(.top, 80)
+                    .padding(.trailing, 80)
+                    .ignoresSafeArea()
+                Text("#\(entry.driverNumber)")
+                    .font(Font.custom("Formula1-Display-Wide", size: 50))
+                    .foregroundColor(.gray)
+                    .scaleEffect(x: 1.0, y: 1.4)
+                    .padding(.bottom, 25)
+                    .padding(.trailing, 60)
+                
+               
             }
         default:
             VStack {
@@ -89,6 +134,7 @@ struct driverWidgetEntryView : View {
 }
 
 struct driverWidget: Widget {
+
     let kind: String = "driverWidget"
 
     var body: some WidgetConfiguration {
@@ -98,15 +144,4 @@ struct driverWidget: Widget {
                 .padding(.all, -16)
         }
     }
-}
-
-
-
-#Preview(as: .systemSmall) {
-    driverWidget()
-} timeline: {
-    SimpleEntry(date: .now, favoriteDriver: "sainz")
-    SimpleEntry(date: .now, favoriteDriver: "hamilton")
-    SimpleEntry(date: .now, favoriteDriver: "perez")
-    SimpleEntry(date: .now, favoriteDriver: "verstappen")
 }

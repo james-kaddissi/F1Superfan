@@ -58,7 +58,6 @@ struct DriverTabView: View {
 struct DriverStatsView: View {
     @Binding var usesTeamColors: Bool
     @Binding var favoriteDriver: String
-    
     @StateObject private var driverStatsManager = DriverStatsManager()
     
     var body: some View {
@@ -161,15 +160,5 @@ struct DriverStatsView: View {
     }
 }
 
-class DriverStatsManager: ObservableObject {
-    @Published var driverStats: DriverStats?
-    
-    func fetchDriverStats(for driverName: String) {
-        FirebaseService.shared.fetchDriverStats(for: driverName) { stats in
-            DispatchQueue.main.async {
-                self.driverStats = stats
-            }
-        }
-    }
-}
+
 

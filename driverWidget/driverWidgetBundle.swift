@@ -7,6 +7,7 @@
 
 import WidgetKit
 import SwiftUI
+import FirebaseCore
 
 @main
 struct driverWidgetBundle: WidgetBundle {
